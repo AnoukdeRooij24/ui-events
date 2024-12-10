@@ -79,3 +79,160 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+
+/*  link 1 - frondend  */
+.bibberen {
+  animation-name: bibberlink;
+  animation-duration: 0.5s;
+  animation-iteration-count: 4;
+}
+
+@keyframes bibberlink {
+  0%    {transform: translate(0px);}
+  33%   {transform: translate(-5px);}
+  66%   {transform: translate(5px);}
+  100%  {transform: translate(0px);}
+}
+
+
+/*  link 2 - design   */
+.kleurenlink {
+  animation-name: color-swap;
+  animation-duration: 1.2s;
+  animation-iteration-count: 6;
+}
+
+@keyframes color-swap {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+/*   link 3 - &   */
+.groter-maken {
+  animation-name: vergroting;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes vergroting{
+  0%    {transform: scale(0);}
+  50%   {transform: scale(2);}
+  100%  {transform: scale(0);}
+}
+
+
+/*  link 4 - development  */
+.op-en-neer {
+  animation-name: up-and-down;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes up-and-down{
+  0%    {transform: translateY(0px);}
+  33%   {transform: translateY(-50px);}
+  66%   {transform: translateY(50px);}
+  100%  {transform: translateY(opx);}
+}
+
+
+/*  link 5 - sprint5   */
+.heen-en-weer {
+  animation-name: links-rechts;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes links-rechts {
+  0%    {transform: translateX(0px);}
+  33%   {transform: translateX(-50px);}
+  66%   {transform: translateX(50px);}
+  100%  {transform: translateX(0px);}
+}
+
+
+/*  link 6 - fix   */
+.color-border {
+  animation-name: border-color-switch;
+  animation-duration: 1.2s;
+  /* animation-iteration-count: 6; */
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes  border-color-switch {
+  0%   {border-color: red;}
+  25%  {border-color: yellow;}
+  50%  {border-color: blue;}
+  100% {border-color: green;}
+}
+
+
+/*  link 7 - the   */
+.color-tekst {
+  animation-name: tekst-color-switch;
+  animation-duration: 1.2s;
+  animation-iteration-count: 6;
+}
+
+@keyframes  tekst-color-switch {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+
+/*  link 8 - flow   */
+.koprol {
+  animation-name: salto;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes salto {
+  0%    {transform: rotate(0deg);}
+  100%  {transform: rotate(360deg);}
+}
+
+
+/*  link 9 - user   */
+.changeStyle{
+  animation-name: style-change;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes style-change {
+  0%  {
+    background-color: var(--secondary);
+    border-color: var(--highlight-primary);
+    color: var(--highlight-primary);
+  }
+
+  100%  {
+    background-color: var(--highlight-primary);
+    border-color: var(--secondary);
+    color: var(--secondary);
+
+  }
+}
+
+
+/*  link 10 - interface   */
+.borderborder{
+  animation-name: borderFlicker;
+  animation-duration: 0.8s;
+  animation-iteration-count: 10;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes borderFlicker {
+  0%    {border-color: var(--highlight-primary);}
+  100%  {border-color: var(--secondary)}
+}
